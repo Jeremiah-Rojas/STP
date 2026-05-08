@@ -51,5 +51,10 @@ These are the resulting configurations showing STP fully functional:
 
 ## Conclusions
 
+The changes may be hard to see themselves so I will explain what happened.
+- The only link affected was the link between Switch 3 and Switch 4 connected on port g0/0 on each device.
+- Taking a close look at the "Role" column in the Switch 4 images, before and after the "break", the role goes from "Altn" or Alternate route which is blocking, to "Desg" or Designated which is forwarding.
+- STP detected a break and changed the way Switch 4 communicated out of port g0/0 in order keep traffic flowing.
+<br>It may seem insignifcant in this small lab, but in the real world where dozens or even hundreds of switches are connected to each other with just as many links, STP allows for traffic flow to continue in the case of a cable/link failure. This prevents the necessity of having an individual/team from manually finding and adjusting switches for optimal traffic flow.
 
 
