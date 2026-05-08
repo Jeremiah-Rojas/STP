@@ -32,7 +32,23 @@ These are the resulting configurations showing STP fully functional:
 ## New topology after stopping “breaking” a link:
 <img width="671" height="333" alt="image" src="https://github.com/user-attachments/assets/933a2fb8-78c0-4604-b31d-cbc3e78fd0cd" />
 
+<br>Switch 1 (root bridge): <img width="710" height="457" alt="image" src="https://github.com/user-attachments/assets/1dda3efc-59cc-4536-972c-4c1c0b7b392a" />
 
+
+<br> Switch 2: <img width="722" height="477" alt="image" src="https://github.com/user-attachments/assets/a46f34ad-a874-4ca0-b77c-b0d3ca17c71c" />
+
+
+<br> Switch 3: <img width="725" height="484" alt="image" src="https://github.com/user-attachments/assets/016a520b-b900-4d31-a05f-65530ab02bef" />
+
+
+<br> Switch 4: <img width="724" height="474" alt="image" src="https://github.com/user-attachments/assets/78ba9c0b-0027-496a-b162-59003a59da6c" />
+<br>
+- “Root” is the root port and is the best path to reaching the root bridge.
+- “Desg” means designated port and forwards traffic away from the root port.
+- “Altn” just blocks traffic coming in from that port.
+- Cost is calculated based on the speed of the cable. The faster the cable, the lower the cost
+
+## Conclusions
 
 
 
